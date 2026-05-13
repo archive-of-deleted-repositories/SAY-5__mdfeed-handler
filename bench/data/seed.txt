@@ -1,0 +1,14 @@
+# Deterministic bench seed material.
+#
+# The simulator's RNG seed is set at compile time in loopback_bench.cpp
+# (and accepts --seed= on the simulator binary). This file documents
+# the seed so a bench result can be reproduced exactly.
+#
+# Seed used for the committed bench/results/bench_local.json:
+#   0xC0FFEE1234567890
+#
+# Symbols (8): AAPL MSFT GOOG AMZN META NVDA TSLA NFLX
+#
+# Re-run:
+#   ./build/loopback_bench --count=200000 --rate=50000 \
+#       --port=51717 --out=bench/results/bench_local.json

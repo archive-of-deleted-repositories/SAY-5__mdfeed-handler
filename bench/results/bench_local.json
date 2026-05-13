@@ -1,0 +1,29 @@
+{
+  "messages_sent": 200000,
+  "messages_received": 200000,
+  "venue_a": 99931,
+  "venue_b": 100069,
+  "parse_errors": 0,
+  "duration_sec": 4.000259,
+  "observed_rate_hz": 49996.77,
+  "drop_rate": 0.000000,
+  "symbols_tracked": 8,
+  "wire_to_normalized_ns": {
+    "count": 200000,
+    "p50": 167,
+    "p95": 292,
+    "p99": 542,
+    "p99_9": 3709,
+    "p99_99": 15087,
+    "max": 383999
+  },
+  "venue_to_recv_ns": {
+    "count": 200000,
+    "p50": 10087,
+    "p95": 26543,
+    "p99": 224255,
+    "p99_9": 2056191,
+    "p99_99": 3594239,
+    "max": 5287935
+  }
+}
