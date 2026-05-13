@@ -1,0 +1,16 @@
+services:
+  handler:
+    build:
+      context: .
+      target: runtime
+    image: mdfeed-handler:latest
+    network_mode: host
+    command: ["--host=127.0.0.1", "--port=42424", "--max=50000"]
+
+  simulator:
+    image: mdfeed-handler:latest
+    depends_on:
+      - handler
+    network_mode: host
+    entrypoint: ["/usr/local/bin/mdfeed_simulator"]
+    command: ["--host=127.0.0.1", "--port=42424", "--count=50000", "--rate=10000"]
